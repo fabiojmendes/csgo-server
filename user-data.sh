@@ -18,9 +18,12 @@ docker run -d --net=host --name=csgo-dedicated \
     cm2network/csgo
 
 # Update dynamic DNS
-curl "https://ipv4.dynv6.com/api/update" -G \
-    -d ipv4=auto \
-    -d token="$DYNAV6_TOKEN" \
-    -d hostname="$DYNAV6_HOST"
+if [[ -n "$DYNAV6_TOKEN" ]]; then
+    echo "Updating dynv6 hostname"
+    curl "https://ipv4.dynv6.com/api/update" -G \
+        -d ipv4=auto \
+        -d token="$DYNAV6_TOKEN" \
+        -d hostname="$DYNAV6_HOST"
+fi
 
 echo "Instalation Finished"

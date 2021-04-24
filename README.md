@@ -1,7 +1,7 @@
-# CSGO Server Provisioning
-Simple script to automate the creation of a csgo using [Digital Ocean](www.digitalocean.com)
+# CS:GO Server Provisioning
+Simple script to automate the creation of a CS:GO dedicated server on [Digital Ocean](www.digitalocean.com)
 
-This script is based on the [CSGO Server](https://github.com/CM2Walki/CSGO) image from https://github.com/CM2Walki
+This script is uses the [CSGO Server](https://github.com/CM2Walki/CSGO) docker image from https://github.com/CM2Walki
 
 # Requirements
 
